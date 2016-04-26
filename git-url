@@ -1,0 +1,30 @@
+#!/bin/sh
+#
+# git-url
+#
+# @author m-coding
+# Returns SSH url path based on key
+
+key=$1
+
+case $1 in
+   "m-coding")
+      echo "git@m-coding.github.com:m-coding/REPO.git"
+      ;;
+   "kermit")
+      echo "git@kermit.github.com:kermit/REPO.git"
+      ;;
+   "fozzie")
+      echo "git@fozzie.github.com:fozzie/REPO.git"
+      ;;
+   "misspiggy")
+      echo "git@misspiggy.gitlab.com:misspiggy/REPO.git"
+      ;;
+   "gonzo")
+      echo "git@gonzo.gitlab.com:gonzo/REPO.git"
+      ;;
+   "pepe")
+      echo "git@pepe.bitbucket.org:pepe/REPO.git"
+      ;;
+   *) echo '"'$1'" is an invalid user, please review '$HOME'/.ssh/config'
+esac

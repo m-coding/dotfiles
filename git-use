@@ -1,0 +1,40 @@
+#!/bin/sh
+#
+# git-use
+#
+# @author m-coding
+# Change the name and email based on key
+
+key=$1
+
+case $1 in
+   "m-coding")
+      git config user.name "M"
+      git config user.email "m-coding@users.noreply.github.com"
+      ;;
+   "kermit")
+      git config user.name "Kermit the Frog"
+      git config user.email "kermit@users.noreply.github.com"
+      ;;
+   "fozzie")
+      git config user.name "Fozzie Bear"
+      git config user.email "fozziebear@users.noreply.github.com"
+      ;;
+   "misspiggy")
+      git config user.name "Miss Piggy"
+      git config user.email "misspiggy@gitlab.com"
+      ;;
+   "gonzo")
+      git config user.name "Gonzo"
+      git config user.email "gonzo@gitlab.com"
+      ;;
+   "pepe")
+      git config user.name "Pepe the King Prawn"
+      git config user.email "pepe@bitbucket.org"
+      ;;
+   *) echo '"'$1'" is an invalid user, please review '$HOME'/.ssh/config'
+esac
+
+echo "Using:"
+git config user.name
+git config user.email
