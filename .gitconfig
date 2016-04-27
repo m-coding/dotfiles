@@ -1,0 +1,15 @@
+[color]
+	ui = auto
+[core]
+	editor = 'C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w
+	excludesfile = %USERPROFILE%\\.gitignore_global
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
+	stat = true
+[user]
+	email = m-coding@users.noreply.github.com
+	name = M
+[credential]
+	helper = wincred
