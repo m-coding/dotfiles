@@ -1,5 +1,8 @@
 # Dotfiles
 
+### .ssh/config
+Settings for multiple users on different git hosts
+
 ### .bashrc
 Contains git aliases and script to auto-launch [ssh-agent](https://help.github.com/articles/working-with-ssh-key-passphrases/) when starting Git Bash on Windows
 
